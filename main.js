@@ -1,0 +1,31 @@
+function setUrl(idStr, urlStr){
+    document.querySelector('#'+idStr).src = urlStr;
+}
+
+setUrl('image-1', 'https://www.pktfuel.com/wp-content/uploads/2017/10/Here-I-am-Lord-send-me-%E2%80%93-Part-5-on-Isaiah-6-8.jpg');
+
+setUrl('image-2', 'https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/64/98/ba/6498bacf-011a-5f93-740a-3f6ceb3665e5/0000768681145.jpg/268x0w.jpg');
+
+setUrl('image-3', 'https://www.mencap.org.uk/sites/default/files/styles/hero_620w_responsive_utility_/public/2016-10/Joe_1600X700_V3.png.jpg?itok=M7elZTP-');
+
+
+function strikeText(){
+    const ul = document.querySelector('#arguments');
+    ul.querySelector('li:first-child').style.textDecorationLine = 'line-through';
+}
+
+strikeText()
+
+
+function removeLi() {
+    const ul = document.querySelector('#arguments');
+    ul.querySelector('li:last-child').remove();
+}
+
+removeLi();
+removeLi();
+
+function appendToUl(element){
+    const ul = document.querySelector('#arguments');
+    ul.appendChild
+}
