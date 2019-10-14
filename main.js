@@ -14,7 +14,7 @@ function strikeText(){
     ul.querySelector('li:first-child').style.textDecorationLine = 'line-through';
 }
 
-strikeText()
+strikeText();
 
 
 function removeLi() {
@@ -28,7 +28,7 @@ removeLi();
 function appendToUl(element){
     const ul = document.querySelector('#arguments');
     const newChild = document.querySelector(element);
-    ul.appendChild(newChild)
+    ul.appendChild(newChild);
 }
 
 appendToUl('#image-2');
@@ -52,16 +52,17 @@ function createHeader(headerNum, innerTxt){
     return document.querySelector('body').appendChild(newHeader);
 }
 
-const newH = createHeader('1', 'test header')
+const newH = createHeader('1', 'test header');
 
 appendToUl('.headR');
 
 function newLi(liText){
 const newItem = document.createElement('li');
     newItem.innerText = liText;
-    newItem.setAttribute('class', 'newLItem')
+    newItem.setAttribute('class', 'newLItem');
     return document.querySelector('body').appendChild(newItem);
 }
 
 const testLi = newLi('This is a test of newLi!');
+
 appendToUl('.newLItem');
